@@ -1,0 +1,9 @@
+<button (click)="antFrase(frases)">Anterior</button>
+<button (click)="segFrase(frases)">Següent</button>
+<div *ngFor="let frase of frases">
+    <p [ngStyle]="{'border': '2px solid black', 'border-radius': '20px', 'height': '1.8rem', 'text-align': 'center', 'padding-top': '8px'}" 
+    [ngClass]="{'fons': frase === currentSentence}">
+        {{ frase }}
+    </p>
+
+</div>
