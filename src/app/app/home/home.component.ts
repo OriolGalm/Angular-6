@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  public welcome: boolean = true;
+
   public arrayFrases: string[] = [
     "El nostre heroi estava surant per l'espai sideral quan a la llunyania va albirar una nau espacial",
     "Sentia curiositat per l'interior de la nau i es va posar a inspeccionar-la. Va arribar a una sala amb dues portes.",
@@ -17,6 +19,10 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  entrar(){
+    this.welcome = false;
   }
 
 }

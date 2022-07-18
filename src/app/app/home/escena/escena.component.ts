@@ -17,7 +17,7 @@ export class EscenaComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  antFrase(res:any){
+  prev(res:any){
     if(this.cont > 0){
     this.cont--;
     this.currentSentence = res[this.cont];
@@ -25,7 +25,7 @@ export class EscenaComponent implements OnInit {
     }
   }
 
-  segFrase(res:any){
+  next(res:any){
     if(this.cont < 3){
     this.cont++;
     this.currentSentence = res[this.cont];

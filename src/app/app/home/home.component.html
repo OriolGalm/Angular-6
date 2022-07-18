@@ -1,1 +1,6 @@
 <app-escena [frases]="arrayFrases"></app-escena>
+<div *ngIf="welcome == true">
+    <h3>Benvinguts a la pàgina de l'aventura sideral</h3>
+    <button (click)="entrar()">Entrar</button>
+    <img src="../../../assets/digital_art_futuristic_astronaut_skeleton_skull_hat_camera_machine-68630.jpg">
+</div>
