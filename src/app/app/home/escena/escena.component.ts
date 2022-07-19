@@ -10,11 +10,12 @@ export class EscenaComponent implements OnInit {
   public currentSentence:any;
   private cont: number = 0;
 
-  @Input() public frases!: string[];
+  @Input() public frases!: any[];
 
   constructor() { }
 
   ngOnInit(): void {
+    this.currentSentence = this.frases[0];
   }
 
   prev(res:any){

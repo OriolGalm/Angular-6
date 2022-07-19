@@ -1,9 +1,11 @@
 <button (click)="prev(frases)">Anterior</button>
 <button (click)="next(frases)">Següent</button>
 <div *ngFor="let frase of frases">
-    <p [ngStyle]="{'border': '2px solid black', 'border-radius': '20px', 'height': '2rem', 'text-align': 'center', 'padding-top': '10px'}" 
+    
+    <p [ngStyle]="{'border': '2px solid black', 'border-radius': '30px', 'height': '2.4rem', 'text-align': 'center', 'padding-top': '16px'}" 
     [ngClass]="{'fons': frase === currentSentence}">
-        {{ frase }}
+        {{ frase.txt }}
     </p>
-
+    
 </div>
+<img src="{{ currentSentence.img }}">
